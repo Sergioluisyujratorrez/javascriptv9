@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eventos JS </title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div >MiWeb</div>
+    <div>
+      <button id="botonTema" class="boton">Tema</button>
+      <button id="botonMenu" class="primary">☰</button>
+    </div>
+  </header>
+
+  <div  id="menu" class="card">
+    <a href="#productos">Ir a Productos</a>
+  </div>
+
+  <main>
+    <section id="productos" class="card">
+      <h2 style="margin:0 0 6px;">Panel: Productos</h2>
+      <p style="margin:0; opacity:.8;">
+        Eventos usados: <b>click</b> (tema y menú), <b>submit</b> (agregar)
+      </p>
+
+      <!-- Evento submit: agregar -->
+      <form id="formularioAgregar">
+        <input id="inputProducto" placeholder="Ej: Café" />
+        <button  class="primary">Agregar</button>
+      </form>
+
+      <!-- Evento click: -->
+      <ul id="listaProductos">
+        <li>
+          <span>Café</span>
+        </li>
+        <li>
+          <span>pan</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js">
+  </script>
+</body>
+</html>
